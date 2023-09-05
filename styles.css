@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+  }
+
+iframe#show-iframe {
+    width: 100%;
+    border: 0;
+    background-color: aqua;
+    height: 50rem;
+    
+}
+
+@import './counter-app/counter-app.css';
