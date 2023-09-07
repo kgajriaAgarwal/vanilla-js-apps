@@ -1,0 +1,12 @@
+#bg-container{
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bg-change-btn{
+    background-color: azure;
+    height: 30px;
+}
