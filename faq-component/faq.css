@@ -1,0 +1,70 @@
+
+.faq-container{
+    height: 10rem;
+    width: 80%;
+}
+.accordian-btn{
+    background-color: transparent;
+    width: 100%;
+    padding: 3px;
+    border: 0;
+    outline: none;
+    text-align: left;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.accordian-btn:hover{
+    color: green;
+}
+
+.accordian-btn img{
+  height: 30px;
+}
+
+.accordian-icon{
+    float: right;
+    font-size: 1.5rem;
+}
+
+.accordian-content{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+    animation: fade 1s ease-in-out;
+}
+
+.dashed-over{
+    color: lightblue;
+}
+
+.accordian-item.active .accordian-btn img{
+  transform: rotate(180deg);
+}
+
+.accordian-btn img{
+  transition: transform 0.5s ease-in;
+}
+
+.accordian-item.active .accordian-btn{
+  max-height: 5rem;
+  color: green;
+}
+
+
+.accordian-item.active .accordian-content{
+    max-height: 5rem;
+}
+
+@keyframes fade {
+  from{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
